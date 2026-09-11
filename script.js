@@ -76,7 +76,7 @@ const LANGS = {
     team5_name:'Lia Scutaru', team5_badge:'Terapeut · Parodontolog', team5_role:'Stomatolog-terapeut, parodontolog',
     team6_name:'Victoria Hanganu', team6_badge:'Ortodont', team6_role:'Stomatolog-ortodont',
     team7_name:'Viorica Mîndrescu', team7_badge:'Asistent', team7_role:'Asistentă principală',
-    team8_name:'Elena Maslieva', team8_badge:'Asistent', team8_role:'Asistenta medicului',
+    team8_name:'Elena Masleaeva', team8_badge:'Asistent', team8_role:'Asistenta medicului',
     doc1_badge:'Medic principal', doc1_role:'Chirurg stomatolog · Implantolog',
     doc1_bio:'Peste 15 ani de experiență în chirurgie stomatologică și implantologie. Urmează regulat cursuri de formare în clinici europene de top.',
     doc2_badge:'Ortodont', doc2_role:'Ortodont · Stomatolog terapeut',
