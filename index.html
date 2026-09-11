@@ -6,7 +6,7 @@
 <title>Clinica profesorului D. Scerbatiuk — Стоматология Кишинёв</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -14,11 +14,19 @@
 <!-- ─── NAV ─────────────────────────────────────────── -->
 <nav id="nav">
   <div class="nav-logo">
-    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16 4C11 4 7 8.5 7 12.5c0 2.5 1 4.5 1 7 0 3.5 1.5 6.5 4 6.5 1.5 0 2.5-1 4-1s2.5 1 4 1c2.5 0 4-3 4-6.5 0-2.5 1-4.5 1-7C25 8.5 21 4 16 4z" fill="#C49A50" fill-opacity=".25" stroke="#C49A50" stroke-width="1.5"/>
-      <path d="M13 13c0-1.7 1.3-3 3-3s3 1.3 3 3" stroke="#3A1E0E" stroke-width="1.5" stroke-linecap="round"/>
+    <svg class="brand-mark" viewBox="0 0 230 44" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="navGlow" x="-60%" y="-60%" width="220%" height="220%">
+          <feGaussianBlur stdDeviation="2.2" result="blur"/>
+          <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.82  0 1 0 0 0.58  0 0 1 0 0.28  0 0 0 1 0" result="warmglow"/>
+          <feMerge><feMergeNode in="warmglow"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <g filter="url(#navGlow)">
+        <text x="0" y="24" font-family="'Roboto Slab',serif" font-weight="900" font-size="21" fill="#2B1B10">DR. STERBATIUC</text>
+        <text x="1" y="37" font-family="'Montserrat',sans-serif" font-weight="600" font-size="7" letter-spacing="2" fill="#2B1B10">CLINICA STOMATOLOGICA</text>
+      </g>
     </svg>
-    Clinica <em>&nbsp;profesorului&nbsp;</em> D.Scerbatiuk
   </div>
   <ul class="nav-links">
     <li><a href="#services" data-i18n="nav_services">Услуги</a></li>
@@ -26,7 +34,7 @@
     <li><a href="#booking" data-i18n="nav_booking">Запись</a></li>
     <li><a href="#contacts" data-i18n="nav_contacts">Контакты</a></li>
   </ul>
-  <div style="display:flex;align-items:center;gap:10px;">
+  <div class="nav-right">
     <div class="lang-switch">
       <button class="lang-btn active" onclick="setLang('ru')">RU</button>
       <button class="lang-btn" onclick="setLang('ro')">RO</button>
@@ -46,6 +54,12 @@
   <a href="#team" onclick="toggleMenu()" data-i18n="nav_team">Команда</a>
   <a href="#booking" onclick="toggleMenu()" data-i18n="nav_booking">Запись</a>
   <a href="#contacts" onclick="toggleMenu()" data-i18n="nav_contacts">Контакты</a>
+  <div class="lang-switch mobile-lang-switch">
+    <button class="lang-btn active" onclick="setLang('ru')">RU</button>
+    <button class="lang-btn" onclick="setLang('ro')">RO</button>
+    <button class="lang-btn" onclick="setLang('en')">EN</button>
+  </div>
+  <a href="#booking" class="nav-cta mobile-cta" onclick="toggleMenu()" data-i18n="nav_cta">Записаться</a>
 </div>
 
 <!-- ─── HERO ─────────────────────────────────────────── -->
@@ -326,7 +340,19 @@
 <footer id="contacts">
   <div class="ft-top">
     <div class="ft-brand">
-      <span class="ft-logo">Clinica <em>prof.</em> Scerbatiuk</span>
+      <svg class="ft-logo" viewBox="0 0 270 52" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="ftGlow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.85  0 1 0 0 0.62  0 0 1 0 0.3  0 0 0 1.2 0" result="warmglow"/>
+            <feMerge><feMergeNode in="warmglow"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <g filter="url(#ftGlow)">
+          <text x="0" y="28" font-family="'Roboto Slab',serif" font-weight="900" font-size="25" fill="#E7C79B">DR. STERBATIUC</text>
+          <text x="1" y="44" font-family="'Montserrat',sans-serif" font-weight="600" font-size="8.3" letter-spacing="2.3" fill="#E7C79B">CLINICA STOMATOLOGICA</text>
+        </g>
+      </svg>
       <p data-i18n="ft_desc">Современная стоматологическая клиника в Кишинёве. Ваша улыбка — наша главная цель.</p>
       <div class="ft-soc">
         <a href="#" class="soc-btn">f</a>

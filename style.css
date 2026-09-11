@@ -50,13 +50,9 @@ nav.scrolled{
   box-shadow:var(--shadow-sm);
 }
 .nav-logo{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.35rem;font-weight:600;
-  color:var(--choc);letter-spacing:.01em;
-  display:flex;align-items:center;gap:10px;
+  display:flex;align-items:center;
 }
-.nav-logo svg{width:28px;height:28px;flex-shrink:0}
-.nav-logo em{color:var(--gold);font-style:italic}
+.nav-logo svg.brand-mark{width:172px;height:auto;flex-shrink:0}
 .nav-links{display:flex;gap:34px;list-style:none;align-items:center}
 .nav-links a{
   text-decoration:none;color:var(--text-md);
@@ -77,6 +73,7 @@ nav.scrolled{
   font-size:.78rem!important;letter-spacing:.09em!important;
   transition:background .3s,transform .25s!important;
 }
+.nav-right{display:flex;align-items:center;gap:10px}
 .nav-cta:hover{background:var(--coffee-dk)!important;transform:translateY(-2px)!important}
 .nav-cta::after{display:none!important}
 a.nav-cta{text-decoration:none!important;border-bottom:none!important}
@@ -85,7 +82,7 @@ a.nav-cta{text-decoration:none!important;border-bottom:none!important}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
 .hamburger span{display:block;width:24px;height:2px;background:var(--choc);border-radius:2px;transition:.3s}
 .mobile-menu{
-  display:none;position:fixed;inset:0;background:var(--cream);z-index:800;
+  display:none;position:fixed;inset:0;background:var(--cream);z-index:950;
   flex-direction:column;align-items:center;justify-content:center;gap:32px;
 }
 .mobile-menu.open{display:flex}
@@ -99,19 +96,25 @@ a.nav-cta{text-decoration:none!important;border-bottom:none!important}
   position:absolute;top:28px;right:32px;
   font-size:1.6rem;color:var(--text-lt);cursor:pointer;background:none;border:none;
 }
+.mobile-lang-switch{margin-top:8px}
+.mobile-lang-switch .lang-btn{font-size:.85rem;padding:7px 14px}
+.mobile-menu .mobile-cta{
+  font-family:'Montserrat',sans-serif;font-size:.85rem!important;
+  padding:14px 38px;letter-spacing:.09em!important;
+}
 
 /* ============================================================
    HERO
 ============================================================ */
 .hero{
-  height:100vh;
+  min-height:100vh;
   position:relative;overflow:hidden;
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:center;
   text-align:center;
-  padding:80px 40px 0;
+  padding:80px 40px 150px;
 }
 
 /* background image layer */
@@ -683,11 +686,8 @@ footer{background:var(--choc);color:var(--cream);padding:80px 64px 40px}
   gap:56px;margin-bottom:56px;
 }
 .ft-logo{
-  font-family:'Cormorant Garamond',serif;
-  font-size:1.5rem;font-weight:600;color:var(--cream);
-  display:block;margin-bottom:14px;
+  display:block;width:230px;height:auto;margin-bottom:14px;
 }
-.ft-logo em{color:var(--gold);font-style:italic}
 .ft-brand p{font-size:.85rem;color:rgba(243,244,245,.58);line-height:1.7;max-width:260px}
 .ft-soc{display:flex;gap:10px;margin-top:22px}
 .soc-btn{
@@ -758,6 +758,7 @@ footer{background:var(--choc);color:var(--cream);padding:80px 64px 40px}
   .strip-right{grid-template-columns:1fr 1fr}
   .hamburger{display:flex}
   .nav-links{display:none}
+  .nav-right{display:none}
 }
 @media(max-width:600px){
   nav,footer{padding-left:20px;padding-right:20px}
@@ -771,6 +772,7 @@ footer{background:var(--choc);color:var(--cream);padding:80px 64px 40px}
   .ft-top{grid-template-columns:1fr}
   .strip-right{grid-template-columns:1fr}
   .time-grid{grid-template-columns:repeat(3,1fr)}
+  .nav-logo svg.brand-mark{width:150px}
   .svc-grid{grid-template-columns:1fr}
 }
 /* ============================================================
