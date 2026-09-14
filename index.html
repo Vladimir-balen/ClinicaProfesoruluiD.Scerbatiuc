@@ -150,7 +150,7 @@
     </div>
     <div class="team-card rv d3">
       <div class="team-photo">
-        <img class="team-photo-img" src="images/ivan_studio.jpg" alt="Исаков Иван"/>
+        <img class="team-photo-img" src="images/ivan.jpg" alt="Исаков Иван"/>
         <span class="team-badge" data-i18n="team3_badge">Стоматолог</span>
       </div>
       <div class="team-info">
@@ -340,14 +340,14 @@
       <svg class="ft-logo" viewBox="0 0 270 52" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <filter id="ftGlow" x="-60%" y="-60%" width="220%" height="220%">
-            <feGaussianBlur stdDeviation="3" result="blur"/>
-            <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.85  0 1 0 0 0.62  0 0 1 0 0.3  0 0 0 1.2 0" result="warmglow"/>
+            <feGaussianBlur stdDeviation="1.1" result="blur"/>
+            <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.85  0 1 0 0 0.62  0 0 1 0 0.3  0 0 0 0.65 0" result="warmglow"/>
             <feMerge><feMergeNode in="warmglow"/><feMergeNode in="SourceGraphic"/></feMerge>
           </filter>
         </defs>
         <g filter="url(#ftGlow)">
-          <text x="0" y="28" font-family="'Roboto Slab',serif" font-weight="900" font-size="25" fill="#E7C79B">DR. STERBATIUC</text>
-          <text x="1" y="44" font-family="'Montserrat',sans-serif" font-weight="600" font-size="8.3" letter-spacing="2.3" fill="#E7C79B">CLINICA STOMATOLOGICA</text>
+          <text x="0" y="28" font-family="'Roboto Slab',serif" font-weight="900" font-size="25" fill="#F0D2A8">DR. STERBATIUC</text>
+          <text x="1" y="44" font-family="'Montserrat',sans-serif" font-weight="600" font-size="8.3" letter-spacing="2.3" fill="#F0D2A8">CLINICA STOMATOLOGICA</text>
         </g>
       </svg>
       <p data-i18n="ft_desc">Современная стоматологическая клиника в Кишинёве. Ваша улыбка — наша главная цель.</p>
@@ -517,12 +517,14 @@
 }
 .sd-actions {
   display: flex;
+  align-items: center;
   gap: 12px;
   flex-wrap: wrap;
 }
 .sd-actions .f-submit {
   flex: 1;
   min-width: 180px;
+  margin-top: 0;
 }
 .sd-close-btn {
   flex: 0 0 auto;
