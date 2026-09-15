@@ -51,6 +51,7 @@ nav.scrolled{
 }
 .nav-logo{
   display:flex;align-items:center;
+  text-decoration:none;cursor:pointer;
 }
 .nav-logo svg.brand-mark{width:172px;height:auto;flex-shrink:0}
 .nav-links{display:flex;gap:34px;list-style:none;align-items:center}
@@ -689,15 +690,6 @@ footer{background:var(--choc);color:var(--cream);padding:80px 64px 40px}
   display:block;width:230px;height:auto;margin-bottom:14px;
 }
 .ft-brand p{font-size:.85rem;color:rgba(243,244,245,.58);line-height:1.7;max-width:260px}
-.ft-soc{display:flex;gap:10px;margin-top:22px}
-.soc-btn{
-  width:36px;height:36px;border-radius:10px;
-  background:rgba(243,244,245,.08);
-  display:flex;align-items:center;justify-content:center;
-  color:var(--gold-lt);font-size:.82rem;text-decoration:none;
-  transition:all .3s;
-}
-.soc-btn:hover{background:rgba(187,153,118,.25);transform:translateY(-2px)}
 
 .ft-col h4{
   font-family:'Montserrat',sans-serif;

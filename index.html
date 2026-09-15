@@ -3,17 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clinica profesorului D. Șcerbatiuc — Стоматология Кишинёв</title>
+
+<!-- ─── Primary SEO ─────────────────────────────────────── -->
+<title>Стоматология в Кишинёве — Clinica profesorului D. Scerbatiuc | Dr. Scerbatiuc</title>
+<meta name="description" content="Стоматологическая клиника Dr. Scerbatiuc в Кишинёве: лечение, имплантация, ортодонтия и эстетическая стоматология. Более 25 лет опыта, современное оборудование, лечение без боли. Запись онлайн.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Clinica profesorului D. Scerbatiuc">
+<link rel="canonical" href="https://scerbatiuc-clinica.md/">
+
+<!-- ─── Open Graph / Facebook ───────────────────────────── -->
+<meta property="og:type" content="business.business">
+<meta property="og:site_name" content="Dr. Scerbatiuc — Clinica Stomatologica">
+<meta property="og:title" content="Стоматология в Кишинёве — Dr. Scerbatiuc">
+<meta property="og:description" content="Современная стоматологическая клиника в Кишинёве: диагностика, лечение, имплантация, ортодонтия и эстетика зубов. Более 25 лет опыта, лечение без боли и страха.">
+<meta property="og:image" content="https://scerbatiuc-clinica.md/images/hero-room.jpg">
+<meta property="og:image:width" content="1672">
+<meta property="og:image:height" content="941">
+<meta property="og:url" content="https://scerbatiuc-clinica.md/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="ro_RO">
+<meta property="og:locale:alternate" content="en_US">
+
+<!-- ─── Twitter Card ─────────────────────────────────────── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Стоматология в Кишинёве — Dr. Scerbatiuc">
+<meta name="twitter:description" content="Современная стоматологическая клиника в Кишинёве. Более 25 лет опыта, лечение без боли и страха. Запись онлайн.">
+<meta name="twitter:image" content="https://scerbatiuc-clinica.md/images/hero-room.jpg">
+
+<!-- ─── Favicons / PWA ───────────────────────────────────── -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#1D1D1E">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- ─── Structured data (schema.org) ─────────────────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Clinica profesorului D. Scerbatiuc",
+  "alternateName": "Dr. Scerbatiuc — Clinica Stomatologica",
+  "image": "https://scerbatiuc-clinica.md/images/hero-room.jpg",
+  "url": "https://scerbatiuc-clinica.md/",
+  "telephone": "+37369822287",
+  "email": "scerbatiuc@gmail.com",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Strada Mitropolit Petru Movilă 23/1, of. 1",
+    "addressLocality": "Chișinău",
+    "addressCountry": "MD"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 47.030472,
+    "longitude": 28.821343
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "17:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "13:00" }
+  ],
+  "sameAs": []
+}
+</script>
 
 </head>
 <body>
-<link rel="stylesheet" href="style.css">
 <!-- ─── NAV ─────────────────────────────────────────── -->
 <nav id="nav">
-  <div class="nav-logo">
+  <a href="#home" class="nav-logo" aria-label="Clinica profesorului D. Scerbatiuc — на главную">
     <svg class="brand-mark" viewBox="0 0 230 44" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <filter id="navGlow" x="-60%" y="-60%" width="220%" height="220%">
@@ -23,11 +89,11 @@
         </filter>
       </defs>
       <g filter="url(#navGlow)">
-        <text x="0" y="24" font-family="'Roboto Slab',serif" font-weight="900" font-size="21" fill="#2B1B10">DR. STERBATIUC</text>
+        <text x="0" y="24" font-family="'Roboto Slab',serif" font-weight="900" font-size="21" fill="#2B1B10">DR. SCERBATIUC</text>
         <text x="1" y="37" font-family="'Montserrat',sans-serif" font-weight="600" font-size="7" letter-spacing="2" fill="#2B1B10">CLINICA STOMATOLOGICA</text>
       </g>
     </svg>
-  </div>
+  </a>
   <ul class="nav-links">
     <li><a href="#services" data-i18n="nav_services">Услуги</a></li>
     <li><a href="#team" data-i18n="nav_team">Команда</a></li>
@@ -70,7 +136,7 @@
 
   <div class="hero-left">
     <div class="hero-eyebrow" data-i18n="hero_eyebrow">Стоматологическая клиника</div>
-    <h1>Clinica<br>profesorului<br>D.Șcerbatiuc</h1>
+    <h1>Clinica<br>profesorului<br>D. Șcerbatiuc</h1>
     <p class="hero-desc" data-i18n="hero_desc">Современное оборудование, индивидуальный подход и более 25 лет опыта — всё для здоровья ваших зубов и красивой улыбки. Современное лечение, анестетики и индивидуальный подход — лечение без боли и страха.
       
     </p>
@@ -346,16 +412,11 @@
           </filter>
         </defs>
         <g filter="url(#ftGlow)">
-          <text x="0" y="28" font-family="'Roboto Slab',serif" font-weight="900" font-size="25" fill="#F0D2A8">DR. STERBATIUC</text>
+          <text x="0" y="28" font-family="'Roboto Slab',serif" font-weight="900" font-size="25" fill="#F0D2A8">DR. SCERBATIUC</text>
           <text x="1" y="44" font-family="'Montserrat',sans-serif" font-weight="600" font-size="8.3" letter-spacing="2.3" fill="#F0D2A8">CLINICA STOMATOLOGICA</text>
         </g>
       </svg>
       <p data-i18n="ft_desc">Современная стоматологическая клиника в Кишинёве. Ваша улыбка — наша главная цель.</p>
-      <div class="ft-soc">
-        <a href="#" class="soc-btn">f</a>
-        <a href="#" class="soc-btn">in</a>
-        <a href="#" class="soc-btn">▶</a>
-      </div>
     </div>
     <div class="ft-col">
       <h4 data-i18n="ft_nav">Навигация</h4>
@@ -398,7 +459,7 @@
     </div>
   </div>
   <div class="ft-bot">
-    <span data-i18n="ft_copy">© 2025 Clinica profesorului Scerbatiuc. Все права защищены.</span>
+    <span data-i18n="ft_copy">© 2025 Clinica profesorului D. Scerbatiuc. Все права защищены.</span>
     <span>Chișinău, Moldova</span>
   </div>
 </footer>
