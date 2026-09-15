@@ -939,7 +939,7 @@ function bookFromService(){
 const CONTACT = {
   phoneDigits: '37369822287',   // WhatsApp / Viber / Telegram / Call — same number
   phoneDisplay: '+37369822287',
-  email: 'info@profesor.com'
+  email: 'scerbatiuc@gmail.com'
 };
 
 function sendVia(type){
